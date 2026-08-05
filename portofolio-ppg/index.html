@@ -1,0 +1,1310 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Portfolio PPL - Mahasiswa</title>
+    <!-- Link ke CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Google -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- Icon Library (Opsional) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- NAVIGASI -->
+    <nav class="navbar">
+
+        <!-- LOGO -->
+        <div class="logo" onclick="showSection('home', document.querySelector('.nav-menu .nav-link'))">
+
+            <i class="fas fa-graduation-cap"></i> PORTOFOLIO
+
+        </div>
+
+        <ul class="nav-menu">
+
+            <li class="nav-link active" onclick="showSection('home', this)">
+                HOME
+            </li>
+
+            <li class="nav-link" onclick="openGroup('profil', this)">
+                PROFIL
+            </li>
+
+            <li class="nav-link" onclick="openGroup('artefak', this)">
+                ARTEFAK
+            </li>
+
+            <li class="nav-link" onclick="openGroup('refleksi', this)">
+                REFLEKSI AKHIR
+            </li>
+
+            <li class="nav-link" onclick="showSection('guru', this)">
+                MODEL GURU
+            </li>
+
+            <li class="nav-link" onclick="showSection('filosofi', this)">
+                FILOSOFI MENGAJAR
+            </li>
+
+            <li class="nav-link" onclick="showSection('refleksimk', this)">
+                REFLEKSI MATA KULIAH
+            </li>
+
+        </ul>
+
+    </nav>
+
+    <!-- ========================================== -->
+    <!-- SECTION HOME -->
+    <!-- ========================================== -->
+
+    <section id="home" class="section active">
+
+        <div class="home-hero">
+
+            <!-- TOP -->
+            <div class="home-topbar">
+
+                <div class="home-logo-group">
+                    <img src="img/logo-ums.webp" alt="logo ums">
+                    <img src="img/logo-ppg-ums.webp" alt="logo ppg ums">
+                </div>
+
+                <!-- RIGHT AREA -->
+                <div class="home-right">
+
+                    <!-- SOSMED -->
+                    <div class="home-social">
+
+                        <a class="linkedin" href="https://www.linkedin.com/in/mohamad-saiful-anwar/" target="_blank">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+
+                        <a class="intagram" href="https://instagram.com/saiful.lll/" target="_blank">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+
+                        <a class="github" href="https://github.com/mohamadsaifulanwar/" target="_blank">
+                            <i class="fab fa-github"></i>
+                        </a>
+
+                        <a class="mail" href="mailto:saifalanwar13@gmail.com" target="_blank">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+
+                    </div>
+
+                    <!-- BUTTON START -->
+                    <a href="javascript:void(0)" class="home-start-btn"
+                        onclick="openGroup('profil', document.querySelectorAll('.nav-link')[1])">
+
+                        START
+
+                    </a>
+
+                </div>
+
+            </div>
+
+            <!-- CONTENT -->
+            <div class="home-content">
+
+                <div class="home-welcome">Welcome to</div>
+
+                <h1 class="home-title">PORTOFOLIO</h1>
+
+                <h3 class="home-subtitle">
+                    MAHASISWA PPG PRAJABATAN 2026 - INFORMATIKA
+                </h3>
+
+                <div class="home-author">
+                    Mohamad Saiful Anwar, S.Kom.
+                </div>
+
+            </div>
+
+            <!-- FOTO -->
+            <img src="img/saiful.png" alt="foto saiful" class="home-person">
+
+            <!-- ORNAMEN -->
+            <div class="home-wave"></div>
+
+        </div>
+
+    </section>
+
+    <!-- ========================================== -->
+    <!-- SECTION PROFIL MAHASISWA -->
+    <!-- ========================================== -->
+    <section id="profil" class="section">
+
+        <!-- ================= PROFIL MAHASISWA ================= -->
+        <h2>Profil Mahasiswa</h2>
+
+        <div class="section-container profil-container profil-mahasiswa">
+
+            <!-- FOTO PROFIL -->
+            <div class="profil-image">
+                <img src="img/saiful.png" alt="Foto Profil Saiful Anwar" class="profil-img">
+            </div>
+
+            <!-- DESKRIPSI PROFIL -->
+            <div class="info-profile">
+
+                <h3>MOHAMAD SAIFUL ANWAR, S.KOM.</h3>
+
+                <p>
+                    Saya adalah mahasiswa PPG Prajabatan Informatika asal Kabupaten Blora, Jawa Tengah, dan lulusan S1
+                    Sistem Informasi Universitas Nahdlatul Ulama Surabaya (UNUSA). Saya memiliki pengalaman lebih dari 6
+                    tahun sebagai Administrasi IT di Lembaga Sertifikasi Profesi (LSP) serta admin pelatihan di Lembaga
+                    Pelatihan Kerja (LPK). Pengalaman tersebut membentuk saya menjadi pribadi yang disiplin, bertanggung
+                    jawab, dan terbiasa menangani administrasi, pelatihan, dokumentasi, serta koordinasi program. Saya
+                    juga memiliki kemampuan di bidang Web Development (Laravel), System Analysis, Desain Grafis, dan IT
+                    Support, didukung sertifikasi BNSP Service Excellent dan System Analyst.
+                </p>
+
+                <p>
+                    Ketertarikan saya menjadi guru berawal dari pengalaman mendampingi kegiatan pelatihan dan membantu
+                    peserta memahami materi hingga berkembang lebih percaya diri dan terampil. Pengalaman tersebut
+                    membuat saya menyadari bahwa berbagi ilmu dan mendampingi proses belajar memberikan kepuasan
+                    tersendiri. Karena itu, saya ingin berkontribusi menciptakan pembelajaran yang bermakna dengan
+                    memanfaatkan pengalaman di bidang teknologi informasi dan pelatihan agar peserta didik dapat
+                    berkembang dalam keterampilan, karakter, dan kesiapan menghadapi dunia nyata.
+                </p>
+
+                <blockquote>
+                    “Mengenal peserta didik dengan hati, mengajar dengan inovasi.”
+                </blockquote>
+
+            </div>
+        </div>
+
+
+        <!-- ================= LPTK ================= -->
+        <h2>Keunikan Kabupaten Blora</h2>
+
+        <div class="section-container profil-container">
+
+            <!-- LOGO -->
+            <div>
+                <div class="profil-logo">
+                    <img src="img/logo-blora.png" alt="Logo Kab. Blora" class="logo-img">
+                </div>
+            </div>
+
+            <!-- MAP -->
+            <div class="profil-image">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d506769.18431696336!2d111.03854274956484!3d-7.110436504552072!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e775b67ffc83e65%3A0x3027a76e352bb00!2sBlora%20Regency%2C%20Central%20Java!5e0!3m2!1sen!2sid!4v1779270042763!5m2!1sen!2sid"
+                    width="100%" height="320" style="border:0;" allowfullscreen="" loading="lazy">
+                </iframe>
+            </div>
+
+            <!-- DESKRIPSI -->
+            <div class="info-profile">
+
+                <h3>1. Kota Jati dan Hutan Terluas</h3>
+
+                <p>
+                    Blora terkenal sebagai daerah penghasil kayu jati berkualitas tinggi. Banyak wilayahnya dikelilingi
+                    hutan jati milik Perhutani sehingga suasana alamnya khas dan masih asri.
+                </p>
+
+                <h3>2. Kampung Halaman Pramoedya Ananta Toer</h3>
+
+                <p>
+                    Blora dikenal sebagai tempat kelahiran Pramoedya Ananta Toer, salah satu sastrawan terbesar
+                    Indonesia. Rumah dan kisah kehidupannya menjadi bagian penting sejarah sastra Indonesia.
+                </p>
+
+                <h3>3. Kesenian Barongan Blora</h3>
+
+                <p>
+                    Salah satu budaya paling khas adalah Barongan Blora, seni pertunjukan tradisional yang mirip singa
+                    barong dengan nuansa mistis, musik gamelan, dan atraksi budaya rakyat.
+                </p>
+
+            </div>
+        </div>
+
+        <!-- ================= LPTK ================= -->
+        <h2>Lembaga Pendidikan Tenaga Kependidikan (LPTK)</h2>
+
+        <div class="section-container profil-container">
+
+            <!-- LOGO -->
+            <div>
+                <div class="profil-logo">
+                    <img src="img/logo-ums.png" alt="Logo UMS" class="logo-img">
+                </div>
+            </div>
+
+            <!-- MAP -->
+            <div class="profil-image">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3955.1544417993528!2d110.77168239999999!3d-7.5581339000000005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a15d549589f8f%3A0x6786fc41534ba967!2sUniversitas%20Muhammadiyah%20Surakarta!5e0!3m2!1sen!2sid!4v1779265598341!5m2!1sen!2sid"
+                    width="100%" height="320" style="border:0;" allowfullscreen="" loading="lazy">
+                </iframe>
+            </div>
+
+            <!-- DESKRIPSI -->
+            <div class="info-profile">
+
+                <h3>UNIVERSITAS MUHAMMADIYAH SURAKARTA</h3>
+
+                <p>
+                    Universitas Muhammadiyah Surakarta merupakan Lembaga Pendidikan Tenaga Kependidikan (LPTK) yang
+                    berlokasi di Jl. A. Yani, Mendungan, Pabelan, Kec. Kartasura, Kabupaten Sukoharjo, Jawa Tengah 57169
+                    yang berperan dalam membimbing mahasiswa menjadi calon pendidik profesional.
+                </p>
+
+            </div>
+        </div>
+
+        <!-- ================= PPLT ================= -->
+        <h2>Praktik Pengalaman Lapangan Terbimbing (PPLT)</h2>
+
+        <div class="section-container profil-container">
+
+            <!-- LOGO -->
+            <div>
+                <div class="profil-logo">
+                    <img src="img/logo-smp.png" alt="Logo SMP" class="logo-img">
+                </div>
+            </div>
+
+            <!-- MAP -->
+            <div class="profil-image">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3955.298905092783!2d110.7975730747633!3d-7.5423451924710845!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a141b9a420a9d%3A0x607a0493cb01b9aa!2sSMP%20Muhammadiyah%20Program%20Khusus%20Surakarta!5e0!3m2!1sen!2sid!4v1779265849628!5m2!1sen!2sid"
+                    width="100%" height="320" style="border:0;" allowfullscreen="" loading="lazy">
+                </iframe>
+            </div>
+
+            <!-- DESKRIPSI -->
+            <div class="info-profile">
+
+                <h3>SMP MUHAMMADIYAH PROGRAM KHUSUS KOTTABARAT SURAKARTA</h3>
+
+                <p>
+                    Praktik Pengalaman Lapangan Terbimbing (PPLT) dilaksanakan di SMP Muhammadiyah Program Khusus
+                    Kottabarat yang berlokasi di Jl. Pleret Raya Barat No.9, Banyuanyar, Kec. Banjarsari, Kota
+                    Surakarta, Jawa Tengah 57137, sebagai sarana mahasiswa untuk menerapkan ilmu dan keterampilan
+                    mengajar secara langsung di lingkungan pendidikan.
+                </p>
+
+            </div>
+        </div>
+
+    </section>
+
+    <!-- ========================================== -->
+    <!-- SECTION ARTEFAK (Sub Menu:Modul, Penilaian, dll) -->
+    <!-- ========================================== -->
+    <section id="artefak" class="section">
+        <h2>Artefak Pembelajaran</h2>
+        <div class="section-container">
+            <!-- Sub Menu Artefak -->
+            <div class="artefak-tabs">
+                <button class="tab-btn artefak-active" onclick="openArtefak('modul', this)">MODUL AJAR</button>
+                <button class="tab-btn" onclick="openArtefak('penilaian', this)">PENILAIAN</button>
+                <button class="tab-btn" onclick="openArtefak('lampiran', this)">LAMPIRAN</button>
+                <button class="tab-btn" onclick="openArtefak('dokumentasi', this)">DOKUMENTASI</button>
+            </div>
+
+            <!-- KONTEN MODUL AJAR -->
+            <div id="modul" class="artefak-content show-content">
+                <div class="card-grid">
+                    <!-- Card 1 -->
+                    <div class="card">
+                        <div class="card-header" style="background-color: #EA4335;"><i class="fas fa-book-open"></i>
+                        </div>
+                        <div class="card-body">
+                            <div class="card-title">RPM SIKLUS 1</div>
+                            <p></p>
+                            <!-- Link Google Drive -->
+                            <a href="https://drive.google.com/drive/folders/1krgbRxk3IWWGQsbOQukkxm1RBrprcKL9?usp=sharing"
+                                target="_blank" class="btn-gdrive"><i class="fas fa-file-pdf"></i> Unduh File</a>
+                            <button class="btn-detail" onclick="openModal('modal-modul-1')">Hasil Analisis</button>
+                        </div>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="card">
+                        <div class="card-header" style="background-color: #FBBC05;"><i class="fas fa-book-open"></i>
+                        </div>
+                        <div class="card-body">
+                            <div class="card-title">RPM SIKLUS 2</div>
+                            <p></p>
+                            <!-- Link Google Drive -->
+                            <a href="https://drive.google.com/drive/folders/1Ev_T642DQlyUQtgMhGU6aX0ac3b8L5Uu?usp=drive_link"
+                                target="_blank" class="btn-gdrive"><i class="fas fa-file-pdf"></i> Unduh File</a>
+                            <button class="btn-detail" onclick="openModal('modal-modul-2')">Hasil Analisis</button>
+                        </div>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="card">
+                        <div class="card-header" style="background-color: #34A853;"><i class="fas fa-book-open"></i>
+                        </div>
+                        <div class="card-body">
+                            <div class="card-title">RPM SIKLUS 3</div>
+                            <p></p>
+                            <!-- Link Google Drive -->
+                            <a href="https://drive.google.com/drive/folders/1h9SOMch-HKocQb4BKsrD5h0nMQlatl9L?usp=drive_link"
+                                target="_blank" class="btn-gdrive"><i class="fas fa-file-pdf"></i> Unduh File</a>
+                            <button class="btn-detail" onclick="openModal('modal-modul-3')">Hasil Analisis</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- KONTEN PENILAIAN -->
+            <div id="penilaian" class="artefak-content">
+                <div class="card-grid">
+                    <div class="card">
+                        <div class="card-header" style="background-color: #EA4335;"><i
+                                class="fas fa-clipboard-check"></i>
+                        </div>
+                        <div class="card-body">
+                            <div class="card-title">PENILAIAN SIKLUS 1</div>
+                            <p></p>
+                            <a href="https://drive.google.com/drive/folders/1vvHGk9rBwTTKPGvYClDq399eglZmFnQj?usp=drive_link"
+                                target="_blank" class="btn-gdrive">Buka</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" style="background-color: #FBBC05;"><i
+                                class="fas fa-clipboard-check"></i>
+                        </div>
+                        <div class="card-body">
+                            <div class="card-title">PENILAIAN SIKLUS 2</div>
+                            <p></p>
+                            <a href="https://drive.google.com/drive/folders/1RqXJV7EB0NjM1juMcz4luwzeV1EvXnY2?usp=drive_link"
+                                target="_blank" class="btn-gdrive">Buka</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" style="background-color: #34A853;"><i
+                                class="fas fa-clipboard-check"></i>
+                        </div>
+                        <div class="card-body">
+                            <div class="card-title">PENILAIAN SIKLUS 3</div>
+                            <p></p>
+                            <a href="https://drive.google.com/drive/folders/14GZq_Ufv-jgfgMziIdJj_5dYOESo5ged?usp=drive_link"
+                                target="_blank" class="btn-gdrive">Buka</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- KONTEN LAMPIRAN & DOKUMENTASI (Sama struktur card nya, saya skip agar tidak terlalu panjang) -->
+            <div id="lampiran" class="artefak-content">
+                <div class="card-grid">
+                    <div class="card">
+                        <div class="card-header" style="background-color: #EA4335;"><i class="fas fa-tasks"></i>
+                        </div>
+                        <div class="card-body">
+                            <div class="card-title">LAMPIRAN SIKLUS 1</div>
+                            <p></p>
+                            <a href="https://drive.google.com/drive/folders/19iq2T36-Xxgn9ZUAizaXF4wqxTnewDq2?usp=drive_link"
+                                target="_blank" class="btn-gdrive">Buka</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" style="background-color: #FBBC05;"><i class="fas fa-tasks"></i>
+                        </div>
+                        <div class="card-body">
+                            <div class="card-title">LAMPIRAN SIKLUS 2</div>
+                            <p></p>
+                            <a href="https://drive.google.com/drive/folders/1qMng5ygpz2bH_OvaZjjo5JBwe70SubVS?usp=sharing"
+                                target="_blank" class="btn-gdrive">Buka</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" style="background-color: #34A853;"><i class="fas fa-tasks"></i>
+                        </div>
+                        <div class="card-body">
+                            <div class="card-title">LAMPIRAN SIKLUS 3</div>
+                            <p></p>
+                            <a href="https://drive.google.com/drive/folders/1tuMvI6B0N0Ti-JxmWPWDEpY7mTgwKBn2?usp=drive_link"
+                                target="_blank" class="btn-gdrive">Buka</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="dokumentasi" class="artefak-content">
+                <div class="card-grid">
+                    <div class="card">
+                        <div class="card-header" style="background-color: #EA4335;"><i class="fas fa-camera"></i>
+                        </div>
+                        <div class="card-body">
+                            <div class="card-title">DOKUMENTASI SIKLUS 1</div>
+                            <p></p>
+                            <a href="https://drive.google.com/drive/folders/1-jYeIOG7h8zODvBCxkw_78HMUJMfvVH6?usp=drive_link"
+                                target="_blank" class="btn-gdrive">Buka</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" style="background-color: #FBBC05;"><i class="fas fa-camera"></i>
+                        </div>
+                        <div class="card-body">
+                            <div class="card-title">DOKUMENTASI SIKLUS 2</div>
+                            <p></p>
+                            <a href="https://drive.google.com/drive/folders/1BEBQqf2LwuwUJHajljQ7ERHKc-deLG2f?usp=drive_link"
+                                target="_blank" class="btn-gdrive">Buka</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" style="background-color: #34A853;"><i class="fas fa-camera"></i>
+                        </div>
+                        <div class="card-body">
+                            <div class="card-title">DOKUMENTASI SIKLUS 3</div>
+                            <p></p>
+                            <a href="https://drive.google.com/drive/folders/1kT2vF6If9QWLYTg7qx7i_c5A7e4k2gMw?usp=drive_link"
+                                target="_blank" class="btn-gdrive">Buka</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================== -->
+    <!-- SECTION REFLEKSI -->
+    <!-- ========================================== -->
+    <section id="refleksi" class="section">
+        <h2>Yang Saya Pelajari Selama PPL</h2>
+
+        <div class="section-container">
+
+            <!-- Refleksi 1 -->
+            <div class="narasi-box refleksi-item">
+                <h3>1. Fleksibilitas & Adaptasi di Kelas</h3>
+
+                <p>
+                    Selama PPL saya menyadari bahwa rencana pembelajaran adalah peta, bukan jalur yang harus diikuti
+                    secara kaku. Ketika kondisi kelas tidak sesuai dengan perencanaan, kemampuan beradaptasi menjadi
+                    faktor penting agar pembelajaran tetap berlangsung secara bermakna.
+                </p>
+
+                <p>
+                    Pada siklus 3, misalnya, sebagian besar murid tidak membawa perangkat digital sehingga proyek
+                    kampanye digital yang telah dirancang tidak dapat dikerjakan secara langsung. Untuk mengatasi
+                    kondisi tersebut, kegiatan dialihkan menjadi perencanaan proyek menggunakan LKPD berbasis
+                    kertas. Meskipun sederhana, aktivitas ini tetap memungkinkan murid berdiskusi, berkolaborasi,
+                    menyusun ide, dan merancang produk yang akan dibuat.
+                </p>
+
+                <p>
+                    Dari pengalaman tersebut saya belajar bahwa pembelajaran tidak harus selalu bergantung pada
+                    teknologi. Aktivitas unplugged dapat memberikan pengalaman belajar yang sama bermaknanya apabila
+                    dirancang dengan tujuan yang jelas dan tetap berpusat pada keterlibatan murid.
+                </p>
+
+                <blockquote>
+                    “Guru yang baik bukan yang selalu menjalankan rencana, tetapi yang mampu menjaga agar tujuan
+                    pembelajaran tetap tercapai ketika rencana tidak berjalan sesuai harapan.”
+                </blockquote>
+            </div>
+
+            <!-- Refleksi 2 -->
+            <div class="narasi-box refleksi-item">
+                <h3>2. Instruksi yang Spesifik & Jelas</h3>
+
+                <p>
+                    Pengalaman selama PPL menunjukkan bahwa kualitas hasil kerja murid sangat dipengaruhi oleh
+                    kejelasan instruksi yang diberikan guru. Murid cenderung mengerjakan tugas berdasarkan apa yang
+                    mereka pahami dari instruksi, bukan berdasarkan apa yang sebenarnya dimaksud oleh guru.
+                </p>
+
+                <p>
+                    Pada siklus 2, saya meminta murid mencari artikel tentang dampak negatif informatika. Namun,
+                    instruksi tersebut ternyata ditafsirkan secara berbeda oleh murid. Sebagian besar hanya mencari
+                    daftar dampak negatif tanpa menghadirkan kasus nyata yang dapat dianalisis lebih lanjut.
+                    Akibatnya, bahan diskusi yang dibawa ke kelas kurang mendalam sehingga proses analisis dan
+                    diskusi kritis tidak berkembang secara optimal.
+                </p>
+
+                <p>
+                    Pengalaman ini mengajarkan bahwa instruksi yang efektif harus memuat tujuan yang jelas, bentuk
+                    hasil yang diharapkan, contoh yang relevan, serta kriteria keberhasilan tugas. Dengan demikian,
+                    murid tidak perlu menebak-nebak apa yang harus mereka kerjakan dan dapat lebih fokus pada proses
+                    berpikir yang diharapkan.
+                </p>
+
+                <blockquote>
+                    “Instruksi yang baik bukan yang paling panjang, melainkan yang membuat murid memahami dengan
+                    jelas apa yang harus dilakukan.”
+                </blockquote>
+            </div>
+
+            <!-- Refleksi 3 -->
+            <div class="narasi-box refleksi-item">
+                <h3>3. Manajemen Kelas & Waktu</h3>
+
+                <p>
+                    Salah satu tantangan yang konsisten saya temui selama PPL adalah pengelolaan kelas pada jam
+                    pelajaran setelah istirahat. Pada waktu tersebut, murid umumnya masih berada dalam suasana
+                    santai sehingga membutuhkan waktu transisi sebelum siap mengikuti pembelajaran.
+                </p>
+
+                <p>
+                    Pada ketiga siklus pembelajaran, kondisi kelas pada awal pertemuan cenderung kurang kondusif
+                    karena murid masih berbicara dengan teman atau belum sepenuhnya fokus. Akibatnya, waktu yang
+                    seharusnya digunakan untuk kegiatan inti berkurang dan berdampak pada tahap presentasi,
+                    refleksi, serta penutup pembelajaran yang menjadi lebih singkat.
+                </p>
+
+                <p>
+                    Dari pengalaman tersebut saya belajar bahwa pengelolaan waktu tidak dimulai ketika kegiatan inti
+                    berlangsung, tetapi sejak menit pertama pembelajaran dimulai. Ke depan, saya perlu menyiapkan
+                    rutinitas pembuka yang konsisten, menyediakan waktu cadangan (buffer time), dan menggunakan
+                    sinyal verbal maupun visual yang jelas untuk membantu murid segera beralih ke suasana belajar.
+                </p>
+
+                <blockquote>
+                    “Waktu yang hilang pada awal pembelajaran sulit digantikan pada akhir pembelajaran.”
+                </blockquote>
+            </div>
+
+            <!-- Refleksi 4 -->
+            <div class="narasi-box refleksi-item">
+                <h3>4. Pendekatan Langsung & Kontrak Belajar</h3>
+
+                <p>
+                    Selama praktik mengajar, saya menemukan bahwa tidak semua murid dapat terlibat secara aktif
+                    hanya melalui instruksi yang disampaikan dari depan kelas. Beberapa murid, terutama yang duduk
+                    di bagian belakang, cenderung lebih mudah kehilangan fokus dan kurang berpartisipasi dalam
+                    kegiatan pembelajaran.
+                </p>
+
+                <p>
+                    Saya melihat bahwa teguran atau arahan yang diberikan dari depan kelas sering kali kurang
+                    efektif. Sebaliknya, ketika saya berkeliling kelas, mendekati kelompok atau murid tertentu,
+                    serta memberikan pendampingan secara langsung, tingkat perhatian dan keterlibatan mereka
+                    meningkat secara signifikan.
+                </p>
+
+                <p>
+                    Selain itu, saya juga menyadari pentingnya kontrak belajar yang disepakati bersama sejak awal.
+                    Aturan yang dibangun melalui kesepakatan bersama membuat murid merasa memiliki tanggung jawab
+                    terhadap suasana kelas, sehingga kepatuhan terhadap aturan menjadi lebih baik dibandingkan
+                    ketika aturan hanya disampaikan secara satu arah oleh guru.
+                </p>
+
+                <blockquote>
+                    “Kehadiran guru di dekat murid bukan hanya bentuk pengawasan, tetapi juga bentuk perhatian yang
+                    mendorong keterlibatan mereka dalam belajar.”
+                </blockquote>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ========================================== -->
+    <!-- SECTION GURU YANG DITUJU (E-Portofolio 1) -->
+    <!-- ========================================== -->
+    <section id="guru" class="section">
+        <h2>Guru Yang Dituju</h2>
+        <div class="section-container">
+            <!-- Misi -->
+            <div class="narasi-box">
+                <h3>Misi</h3>
+                <ul style="margin-top: 10px; padding-left: 20px; list-style: disc;">
+                    <li>Menjadi guru profesional yang mampu menciptakan pembelajaran aktif, kreatif, inovatif,
+                        dan
+                        menyenangkan sesuai kebutuhan peserta didik.</li>
+                    <li>Mengembangkan kemampuan pedagogik, teknologi, dan komunikasi agar pembelajaran lebih
+                        efektif dan
+                        relevan dengan perkembangan zaman.</li>
+                    <li>Menanamkan nilai karakter, kedisiplinan, tanggung jawab, dan sikap saling menghargai
+                        kepada
+                        peserta didik melalui keteladanan guru.</li>
+                    <li>Meningkatkan kompetensi diri secara berkelanjutan melalui pelatihan, refleksi, dan
+                        pengembangan
+                        profesional.</li>
+                    <li>Membangun lingkungan belajar yang inklusif, aman, dan mendukung perkembangan potensi
+                        setiap
+                        peserta didik.</li>
+                </ul>
+            </div>
+
+            <!-- Kompetensi yang Dibangun -->
+            <div class="analisis-item">
+                <h3>Kompetensi yang Ingin Dibangun</h3>
+                <ul style="margin-top: 10px; padding-left: 20px; list-style: disc;">
+                    <li><b>Pedagogik:</b> Mampu memahami karakteristik peserta didik, merancang pembelajaran,
+                        melaksanakan evaluasi, dan mengembangkan proses belajar yang efektif.</li>
+                    <li><b>Profesional:</b> Menguasai materi pelajaran secara mendalam serta mampu memanfaatkan
+                        teknologi dan metode pembelajaran modern.</li>
+                    <li><b>Sosial:</b> Mampu berkomunikasi dan bekerja sama dengan peserta didik, rekan guru,
+                        orang tua,
+                        dan masyarakat.</li>
+                    <li><b>Kepribadian:</b> Memiliki sikap dewasa, bijaksana, disiplin, jujur, dan menjadi
+                        teladan bagi
+                        peserta didik.</li>
+                    <li><b>Adaptif dan Inovatif:</b> Mampu menyesuaikan diri terhadap perkembangan pendidikan
+                        dan
+                        menciptakan inovasi pembelajaran yang menarik.</li>
+                </ul>
+            </div>
+
+            <div class="analisis-item">
+                <h3>Karakter Guru yang Ingin Dibangun</h3>
+                <ul style="margin-top: 10px; padding-left: 20px; list-style: disc;">
+                    <li>Disiplin dan bertanggung jawab dalam menjalankan tugas.</li>
+                    <li>Sabar dan peduli terhadap kebutuhan peserta didik.</li>
+                    <li>Kreatif dan inovatif dalam merancang pembelajaran.</li>
+                    <li>Jujur dan memiliki integritas tinggi.</li>
+                    <li>Komunikatif serta mampu membangun hubungan yang baik dengan peserta didik dan lingkungan
+                        sekolah.</li>
+                    <li>Memiliki semangat belajar sepanjang hayat.</li>
+                    <li>Tegas namun tetap humanis dalam mendidik peserta didik.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================== -->
+    <!-- SECTION FILOSOFI MENGAJAR -->
+    <!-- ========================================== -->
+    <section id="filosofi" class="section">
+        <h2>Filosofi Mengajar</h2>
+        <div class="section-container">
+
+            <div class="narasi-box">
+                <p>
+                    Saya meyakini bahwa pembelajaran yang baik bukan sekadar proses
+                    mentransfer pengetahuan dari guru kepada peserta didik, melainkan
+                    proses membantu peserta didik membangun pemahaman mereka sendiri
+                    melalui pengalaman belajar yang bermakna. Keyakinan ini sejalan
+                    dengan teori konstruktivisme yang dikemukakan oleh Jean Piaget dan
+                    Lev Vygotsky, yang menekankan bahwa pengetahuan dibangun secara aktif
+                    melalui interaksi dengan lingkungan dan orang lain. Oleh karena itu,
+                    saya berusaha menciptakan pembelajaran yang mendorong peserta didik
+                    untuk berpikir, bertanya, berdiskusi, dan menemukan solusi atas
+                    permasalahan yang mereka hadapi.
+                </p>
+
+                <p>
+                    Pengalaman observasi, asistensi, dan praktik mengajar terbimbing
+                    mengajarkan saya bahwa setiap peserta didik memiliki karakteristik,
+                    kemampuan, dan cara belajar yang berbeda. Karena itu, guru perlu
+                    memberikan ruang bagi seluruh peserta didik untuk berkembang sesuai
+                    potensinya. Saya percaya bahwa pembelajaran harus berpusat pada
+                    peserta didik (<i>student-centered learning</i>) dengan menghadirkan
+                    aktivitas yang kontekstual, kolaboratif, dan relevan dengan kehidupan
+                    sehari-hari. Prinsip ini juga sejalan dengan konsep pembelajaran
+                    mendalam (<i>deep learning</i>) yang menekankan pembelajaran yang
+                    berkesadaran (<i>mindful</i>), bermakna (<i>meaningful</i>), dan
+                    menyenangkan (<i>joyful</i>).
+                </p>
+
+                <p>
+                    Sebagai calon guru Informatika, saya memandang bahwa tugas guru tidak
+                    hanya mengembangkan kemampuan akademik peserta didik, tetapi juga
+                    membentuk karakter, etika, dan tanggung jawab dalam memanfaatkan
+                    teknologi. Oleh karena itu, saya berupaya menghadirkan pembelajaran
+                    yang tidak hanya berfokus pada penguasaan konsep, tetapi juga pada
+                    pengembangan keterampilan berpikir kritis, kreativitas, kolaborasi,
+                    komunikasi, serta literasi digital. Saya percaya bahwa guru adalah
+                    fasilitator pembelajaran sekaligus pembelajar sepanjang hayat yang
+                    harus terus melakukan refleksi dan perbaikan agar dapat memberikan
+                    pengalaman belajar yang bermakna dan mempersiapkan peserta didik
+                    menghadapi tantangan masa depan.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ========================================== -->
+    <!-- SECTION REFLEKSI MATA KULIAH -->
+    <!-- ========================================== -->
+    <section id="refleksimk" class="section">
+        <h2>Refleksi Setiap Mata Kuliah</h2>
+        <div class="section-container">
+
+            <!-- Sub Menu Mata Kuliah -->
+            <div class="refleksimk-tabs">
+                <button class="tab-btn refleksimk-active" onclick="openRefleksimk('smt1', this)">SEMESTER 1</button>
+                <button class="tab-btn" onclick="openRefleksimk('smt2', this)">SEMESTER 2</button>
+            </div>
+
+            <!-- SEMESTER 1 -->
+            <div id="smt1" class="refleksimk-content show-content">
+                <div class="card-grid">
+                    <!-- Card 1 -->
+                    <div class="card">
+                        <div class="card-header" style="background-color: #EA4335;"><i class="fas fa-book-open"></i>
+                        </div>
+                        <div class="card-body">
+                            <div class="card-title">FILOSOFI PENDIDIKAN DAN PENDIDIKAN NILAI</div>
+                            <p></p>
+                            <!-- Link Google Drive -->
+                            <a href="https://docs.google.com/document/d/1vFQwvYhsLV8KmOWiUbkYzd2lRBxhPCNR/edit?usp=sharing&ouid=109453061101619358810&rtpof=true&sd=true"
+                                target="_blank" class="btn-gdrive"><i class="fas fa-file-pdf"></i> Lihat Refleksi</a>
+                        </div>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="card">
+                        <div class="card-header" style="background-color: #FBBC05;"><i class="fas fa-book-open"></i>
+                        </div>
+                        <div class="card-body">
+                            <div class="card-title">PEMAHAMAN TENTANG PESERTA DIDIK DAN PEMBELAJARAN</div>
+                            <p></p>
+                            <!-- Link Google Drive -->
+                            <a href="https://docs.google.com/document/d/1E87G2wEuk7RPe83vatHz4_4FjHJd37jQ/edit?usp=sharing&ouid=109453061101619358810&rtpof=true&sd=true"
+                                target="_blank" class="btn-gdrive"><i class="fas fa-file-pdf"></i> Lihat Refleksi</a>
+                        </div>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="card">
+                        <div class="card-header" style="background-color: #34A853;"><i class="fas fa-book-open"></i>
+                        </div>
+                        <div class="card-body">
+                            <div class="card-title">PEMBELAJARAN MENDALAM DAN ASESMEN (PMA) DASAR (UMUM)</div>
+                            <p></p>
+                            <!-- Link Google Drive -->
+                            <a href="https://docs.google.com/document/d/1Ug-y7INXQeECnL0EcDw_U7zYccMvjqBG/edit?usp=sharing&ouid=109453061101619358810&rtpof=true&sd=true"
+                                target="_blank" class="btn-gdrive"><i class="fas fa-file-pdf"></i> Lihat Refleksi</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-grid">
+                    <!-- Card 1 -->
+                    <div class="card">
+                        <div class="card-header" style="background-color: #EA4335;"><i class="fas fa-book-open"></i>
+                        </div>
+                        <div class="card-body">
+                            <div class="card-title">PRAKTIK PENGALAMAN LAPANGAN (PPL) TERBIMBING</div>
+                            <p></p>
+                            <!-- Link Google Drive -->
+                            <a href="https://docs.google.com/document/d/1_rB64VLhYzcRcdtj0nF6BDJM-lAVkHjV/edit?usp=sharing&ouid=109453061101619358810&rtpof=true&sd=true"
+                                target="_blank" class="btn-gdrive"><i class="fas fa-file-pdf"></i> Lihat Refleksi</a>
+                        </div>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="card">
+                        <div class="card-header" style="background-color: #FBBC05;"><i class="fas fa-book-open"></i>
+                        </div>
+                        <div class="card-body">
+                            <div class="card-title">POLA PIKIR BERTUMBUH (GROWTH MINDSET) DALAM PEMBELAJARAN</div>
+                            <p></p>
+                            <!-- Link Google Drive -->
+                            <a href="https://docs.google.com/document/d/1xuuD-fboId12PhLrxA6Uq0tezTfhGFf9/edit?usp=sharing&ouid=109453061101619358810&rtpof=true&sd=true"
+                                target="_blank" class="btn-gdrive"><i class="fas fa-file-pdf"></i> Lihat Refleksi</a>
+                        </div>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="card">
+                        <div class="card-header" style="background-color: #34A853;"><i class="fas fa-book-open"></i>
+                        </div>
+                        <div class="card-body">
+                            <div class="card-title">COMPUTATIONAL THINKING</div>
+                            <p></p>
+                            <!-- Link Google Drive -->
+                            <a href="https://docs.google.com/document/d/1O9L8H-7vRmE9gIioWKnHNZjtBA8shlth/edit?usp=sharing&ouid=108908849823718896871&rtpof=true&sd=true"
+                                target="_blank" class="btn-gdrive"><i class="fas fa-file-pdf"></i> Lihat Refleksi</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SEMESTER 2 -->
+            <div id="smt2" class="refleksimk-content">
+                <div class="card-grid">
+                    <!-- Card 1 -->
+                    <div class="card">
+                        <div class="card-header" style="background-color: #EA4335;"><i class="fas fa-book-open"></i>
+                        </div>
+                        <div class="card-body">
+                            <div class="card-title">PEMBELAJARAN MENDALAM DAN ASESMEN LANJUT SMK</div>
+                            <p></p>
+                            <!-- Link Google Drive -->
+                            <a href="https://drive.google.com" target="_blank" class="btn-gdrive"><i
+                                    class="fas fa-file-pdf"></i> Lihat Refleksi</a>
+                        </div>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="card">
+                        <div class="card-header" style="background-color: #FBBC05;"><i class="fas fa-book-open"></i>
+                        </div>
+                        <div class="card-body">
+                            <div class="card-title">PEMBELAJARAN SOSIAL EMOSIONAL</div>
+                            <p></p>
+                            <!-- Link Google Drive -->
+                            <a href="https://drive.google.com" target="_blank" class="btn-gdrive"><i
+                                    class="fas fa-file-pdf"></i> Lihat Refleksi</a>
+                        </div>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="card">
+                        <div class="card-header" style="background-color: #34A853;"><i class="fas fa-book-open"></i>
+                        </div>
+                        <div class="card-body">
+                            <div class="card-title">PENDIDIKAN BERKEMAJUAN</div>
+                            <p></p>
+                            <!-- Link Google Drive -->
+                            <a href="https://drive.google.com" target="_blank" class="btn-gdrive"><i
+                                    class="fas fa-file-pdf"></i> Lihat Refleksi</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-grid">
+                    <!-- Card 1 -->
+                    <div class="card">
+                        <div class="card-header" style="background-color: #EA4335;"><i class="fas fa-book-open"></i>
+                        </div>
+                        <div class="card-body">
+                            <div class="card-title">PRAKTIK PENGALAMAN LAPANGAN (PPL) MANDIRI</div>
+                            <p></p>
+                            <!-- Link Google Drive -->
+                            <a href="https://drive.google.com" target="_blank" class="btn-gdrive"><i
+                                    class="fas fa-file-pdf"></i> Lihat Refleksi</a>
+                        </div>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="card">
+                        <div class="card-header" style="background-color: #FBBC05;"><i class="fas fa-book-open"></i>
+                        </div>
+                        <div class="card-body">
+                            <div class="card-title">SEMINAR PENDIDIKAN PROFESI GURU</div>
+                            <p></p>
+                            <!-- Link Google Drive -->
+                            <a href="https://drive.google.com" target="_blank" class="btn-gdrive"><i
+                                    class="fas fa-file-pdf"></i> Lihat Refleksi</a>
+                        </div>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="card">
+                        <div class="card-header" style="background-color: #34A853;"><i class="fas fa-book-open"></i>
+                        </div>
+                        <div class="card-body">
+                            <div class="card-title">PROJEK KEPEMIMPINAN</div>
+                            <p></p>
+                            <!-- Link Google Drive -->
+                            <a href="https://drive.google.com" target="_blank" class="btn-gdrive"><i
+                                    class="fas fa-file-pdf"></i> Lihat Refleksi</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- MODAL (Pop Up) Detail -->
+    <div id="modal-modul-1" class="modal">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeModal('modal-modul-1')">&times;</span>
+
+            <h3>Modul Ajar 1 — Memahami Dampak Positif Informatika</h3>
+
+            <p><b>Konteks:</b>
+                Modul ajar ini disusun untuk peserta didik kelas VIII pada materi Dampak Sosial Informatika, khususnya
+                dampak positif informatika dalam kehidupan sehari-hari. Materi dipilih karena peserta didik telah
+                terbiasa menggunakan teknologi digital, namun belum sepenuhnya menyadari berbagai manfaat informatika
+                dalam bidang pendidikan, komunikasi, kesehatan, ekonomi, dan aktivitas sehari-hari. Pembelajaran
+                dirancang menggunakan pendekatan Problem Based Learning (PBL) dan prinsip Deep Learning agar peserta
+                didik dapat menghubungkan konsep yang dipelajari dengan pengalaman nyata yang mereka alami.
+            </p>
+
+            <p><b>Tujuan:</b>
+                Modul ini bertujuan membantu peserta didik mengidentifikasi berbagai dampak positif informatika,
+                menjelaskan manfaat teknologi digital dalam kehidupan sehari-hari, serta mengembangkan kemampuan
+                berpikir kritis melalui kegiatan diskusi dan presentasi kelompok. Selain itu, pembelajaran diharapkan
+                dapat menumbuhkan kesadaran peserta didik untuk memanfaatkan teknologi secara produktif dan bertanggung
+                jawab.
+            </p>
+
+            <p><b>Analisis Berdasarkan Kajian Teori:</b>
+                Modul dirancang berdasarkan model Problem Based Learning yang menempatkan peserta didik sebagai pusat
+                pembelajaran. Pertanyaan pemantik mengenai aplikasi yang paling membantu kehidupan sehari-hari berfungsi
+                sebagai aktivasi pengetahuan awal (prior knowledge activation) sesuai teori konstruktivisme. Kegiatan
+                diskusi kelompok memberikan kesempatan peserta didik membangun pemahaman melalui interaksi sosial
+                sebagaimana dijelaskan dalam teori konstruktivisme sosial Vygotsky. Selain itu, penerapan prinsip
+                Mindful, Meaningful, dan Joyful Learning mendukung terciptanya pembelajaran yang berkesadaran, bermakna,
+                dan menyenangkan sehingga peserta didik lebih terlibat dalam proses belajar.
+            </p>
+
+            <p><b>Kelebihan:</b></p>
+            <p>
+                Pertanyaan pemantik yang kontekstual mampu menghubungkan materi dengan pengalaman peserta didik sehingga
+                meningkatkan keterlibatan sejak awal pembelajaran. Struktur pembelajaran yang mengintegrasikan prinsip
+                Deep Learning memberikan alur yang jelas dan sistematis. Penggunaan diskusi kelompok dan presentasi
+                mendorong kemampuan komunikasi serta kolaborasi peserta didik. Selain itu, asesmen yang dilakukan secara
+                bertahap memungkinkan guru memantau perkembangan pemahaman peserta didik selama proses pembelajaran
+                berlangsung.
+            </p>
+
+            <p><b>Kekurangan:</b></p>
+            <p>
+                Alokasi waktu antara diskusi dan presentasi belum sepenuhnya seimbang karena waktu diskusi relatif lebih
+                singkat dibandingkan waktu presentasi. Instrumen asesmen awal juga belum dirancang secara spesifik untuk
+                memetakan tingkat pemahaman awal peserta didik. Selain itu, tujuan pembelajaran masih lebih dominan pada
+                aspek kognitif dan belum secara eksplisit mengukur perkembangan sikap peserta didik terhadap penggunaan
+                teknologi secara bijak.
+            </p>
+
+            <p><b>Kendala Saat Menyusun Modul:</b></p>
+            <p>
+                Tantangan utama dalam penyusunan modul adalah menentukan aktivitas pembelajaran yang sesuai dengan
+                karakteristik peserta didik sekaligus tetap selaras dengan capaian pembelajaran Informatika. Selain itu,
+                diperlukan penyesuaian antara kedalaman materi, variasi aktivitas pembelajaran, dan keterbatasan alokasi
+                waktu agar seluruh kegiatan dapat dilaksanakan secara efektif dalam satu kali pertemuan.
+            </p>
+
+            <p><b>Faktor Keberhasilan Saat Diterapkan:</b></p>
+            <p>
+                Keberhasilan implementasi modul didukung oleh relevansi materi dengan kehidupan sehari-hari peserta
+                didik. Mayoritas peserta didik telah memiliki pengalaman menggunakan teknologi digital sehingga mudah
+                memahami contoh-contoh yang diberikan. Diskusi kelompok berjalan cukup aktif karena topik yang dibahas
+                dekat dengan pengalaman mereka. Selain itu, penggunaan pertanyaan pemantik yang sederhana tetapi
+                kontekstual berhasil meningkatkan partisipasi peserta didik selama pembelajaran.
+            </p>
+
+            <p><b>Penyesuaian Jika Diterapkan pada Situasi Kelas yang Berbeda:</b></p>
+            <p>
+                Apabila diterapkan pada kelas dengan tingkat partisipasi yang rendah, guru perlu menambahkan aktivitas
+                ice breaking, penggunaan media visual yang lebih menarik, atau metode diskusi yang lebih terstruktur.
+                Jika diterapkan pada kelas dengan kemampuan akademik yang heterogen, diperlukan diferensiasi tugas dan
+                penyediaan scaffolding yang lebih jelas untuk membantu peserta didik yang membutuhkan dukungan tambahan.
+                Selain itu, alokasi waktu diskusi dapat diperpanjang agar peserta didik memiliki kesempatan yang lebih
+                memadai untuk mengeksplorasi ide sebelum melakukan presentasi.
+            </p>
+
+            <hr style="margin: 15px 0;">
+
+            <p><i>
+                    Melalui modul ini, peserta didik tidak hanya memahami berbagai dampak positif informatika, tetapi
+                    juga mampu mengaitkan manfaat teknologi dengan kehidupan sehari-hari serta mengembangkan kemampuan
+                    berpikir kritis, komunikasi, dan kolaborasi sebagai bagian dari kompetensi abad ke-21.
+                </i></p>
+        </div>
+    </div>
+
+    <div id="modal-modul-2" class="modal">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeModal('modal-modul-2')">&times;</span>
+
+            <h3>Modul Ajar 2 — Menganalisis Dampak Negatif Informatika dan Solusinya</h3>
+
+            <p><b>Konteks:</b>
+                Modul ajar ini merupakan kelanjutan dari pembelajaran mengenai Dampak Sosial Informatika yang berfokus
+                pada dampak negatif penggunaan teknologi digital. Setelah peserta didik memahami berbagai manfaat
+                informatika pada pertemuan sebelumnya, mereka diajak untuk mengidentifikasi berbagai risiko dan
+                permasalahan yang muncul akibat perkembangan teknologi, seperti penyebaran hoaks, cyberbullying,
+                kecanduan gawai, pelanggaran privasi, dan penyalahgunaan media sosial. Pembelajaran dirancang agar
+                peserta didik tidak hanya memahami permasalahan yang terjadi, tetapi juga mampu merumuskan solusi yang
+                dapat diterapkan dalam kehidupan sehari-hari.
+            </p>
+
+            <p><b>Tujuan:</b>
+                Modul ini bertujuan membantu peserta didik menganalisis berbagai dampak negatif informatika,
+                mengidentifikasi penyebab dan konsekuensi yang ditimbulkan, serta merumuskan solusi preventif maupun
+                korektif yang dapat dilakukan oleh individu maupun masyarakat. Selain itu, pembelajaran diharapkan dapat
+                meningkatkan kemampuan berpikir kritis, pemecahan masalah, komunikasi, dan kolaborasi peserta didik.
+            </p>
+
+            <p><b>Analisis Berdasarkan Kajian Teori:</b>
+                Modul dirancang menggunakan model Problem Based Learning (PBL) yang menempatkan permasalahan nyata
+                sebagai titik awal pembelajaran. Peserta didik diberikan berbagai studi kasus yang dekat dengan
+                kehidupan mereka sehingga dapat melakukan proses analisis secara lebih bermakna. Pendekatan ini sejalan
+                dengan teori konstruktivisme yang menekankan bahwa pengetahuan dibangun melalui pengalaman dan interaksi
+                dengan lingkungan. Aktivitas diskusi kelompok juga mendukung teori konstruktivisme sosial Vygotsky
+                karena peserta didik belajar melalui kolaborasi, pertukaran ide, dan negosiasi makna bersama teman
+                sebaya. Pertanyaan reflektif yang digunakan dalam diskusi mendorong peserta didik mencapai kemampuan
+                berpikir tingkat tinggi (Higher Order Thinking Skills/HOTS).
+            </p>
+
+            <p><b>Kelebihan:</b></p>
+            <p>
+                Kegiatan pembelajaran diawali dengan mengulas artikel yang telah dicari peserta didik pada pertemuan
+                sebelumnya sehingga tercipta kesinambungan antarmateri. Modul ini juga menerapkan diferensiasi produk
+                melalui pilihan membuat mind map, daftar poin, atau skenario singkat sehingga peserta didik dapat
+                menunjukkan pemahamannya sesuai minat dan gaya belajar masing-masing. Pertanyaan reflektif yang
+                digunakan selama diskusi mampu mendorong kemampuan analisis dan evaluasi peserta didik. Selain itu,
+                urutan kegiatan pembelajaran yang dimulai dari identifikasi masalah, analisis penyebab dan dampak,
+                hingga perumusan solusi menunjukkan alur berpikir kritis yang sistematis.
+            </p>
+
+            <p><b>Kekurangan:</b></p>
+            <p>
+                Perencanaan waktu dalam modul masih perlu disempurnakan karena beberapa aktivitas pembelajaran belum
+                diperhitungkan secara rinci sehingga berpotensi melebihi alokasi waktu yang tersedia. Instruksi
+                pembentukan kelompok juga masih kurang konsisten sehingga dapat menimbulkan kebingungan saat
+                pelaksanaan. Selain itu, LKPD belum dilengkapi contoh atau template yang cukup rinci untuk membantu
+                peserta didik melakukan analisis kasus secara sistematis. Rubrik penilaian yang digunakan juga belum
+                disajikan secara lengkap sehingga berpotensi menimbulkan perbedaan interpretasi dalam proses asesmen.
+            </p>
+
+            <p><b>Kendala Saat Menyusun Modul:</b></p>
+            <p>
+                Tantangan utama dalam penyusunan modul ini adalah memilih kasus yang relevan dengan kehidupan peserta
+                didik namun tetap sesuai dengan tujuan pembelajaran. Selain itu, penyusun perlu merancang aktivitas yang
+                mampu menyeimbangkan antara proses analisis masalah dan perumusan solusi dalam waktu yang terbatas.
+                Menentukan bentuk diferensiasi produk yang dapat mengakomodasi berbagai karakteristik peserta didik juga
+                menjadi salah satu pertimbangan penting selama proses penyusunan modul.
+            </p>
+
+            <p><b>Faktor Keberhasilan Saat Diterapkan:</b></p>
+            <p>
+                Keberhasilan implementasi modul didukung oleh penggunaan kasus-kasus yang dekat dengan kehidupan peserta
+                didik, seperti penggunaan media sosial dan penyebaran informasi digital. Peserta didik terlihat lebih
+                mudah terlibat dalam diskusi karena mereka memiliki pengalaman yang berkaitan dengan topik yang dibahas.
+                Aktivitas kerja kelompok juga membantu peserta didik bertukar pandangan dan memperkaya hasil analisis.
+                Selain itu, keterkaitan materi dengan tugas pada pertemuan sebelumnya membuat peserta didik memiliki
+                bekal pengetahuan awal yang cukup untuk mengikuti pembelajaran.
+            </p>
+
+            <p><b>Penyesuaian Jika Diterapkan pada Situasi Kelas yang Berbeda:</b></p>
+            <p>
+                Jika diterapkan pada kelas dengan kemampuan analisis yang masih rendah, guru perlu menyediakan contoh
+                kasus yang lebih sederhana serta scaffolding berupa pertanyaan pemandu yang lebih rinci. Pada kelas
+                dengan jumlah peserta didik yang besar, pembentukan kelompok perlu dirancang lebih terstruktur agar
+                diskusi berjalan efektif. Sementara itu, pada kelas yang memiliki akses teknologi lebih baik, kegiatan
+                analisis kasus dapat dikembangkan menggunakan sumber informasi digital yang lebih beragam atau
+                memanfaatkan platform kolaboratif daring untuk memperkaya proses pembelajaran.
+            </p>
+
+            <hr style="margin: 15px 0;">
+
+            <p><i>
+                    Melalui modul ini, peserta didik tidak hanya memahami berbagai dampak negatif informatika, tetapi
+                    juga belajar berpikir kritis dalam menganalisis permasalahan digital serta mengembangkan kemampuan
+                    mencari solusi yang bertanggung jawab dan relevan dengan kehidupan sehari-hari.
+                </i></p>
+        </div>
+    </div>
+
+    <div id="modal-modul-3" class="modal">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeModal('modal-modul-3')">&times;</span>
+
+            <h3>Modul Ajar 3 — Etika Digital dan Kampanye Digital</h3>
+
+            <p><b>Konteks:</b>
+                Modul ajar ini merupakan puncak dari rangkaian pembelajaran Dampak Sosial Informatika. Setelah peserta
+                didik mempelajari dampak positif dan dampak negatif informatika pada pertemuan sebelumnya, mereka diajak
+                untuk memahami pentingnya etika digital sebagai landasan dalam menggunakan teknologi secara bertanggung
+                jawab. Pembelajaran tidak hanya berfokus pada pemahaman konsep, tetapi juga mengarahkan peserta didik
+                untuk menghasilkan karya berupa kampanye digital yang bertujuan meningkatkan kesadaran masyarakat
+                mengenai penggunaan teknologi yang aman, etis, dan produktif. Dengan demikian, peserta didik tidak hanya
+                menjadi pengguna teknologi, tetapi juga agen perubahan yang mampu menyebarkan pesan positif di
+                lingkungan sekitarnya.
+            </p>
+
+            <p><b>Tujuan:</b>
+                Modul ini bertujuan membantu peserta didik memahami konsep etika digital, hak kekayaan intelektual,
+                keamanan data pribadi, serta pentingnya bertanggung jawab dalam aktivitas digital. Selain itu, peserta
+                didik diharapkan mampu menerapkan pemahamannya melalui perancangan kampanye digital yang kreatif dan
+                edukatif. Pembelajaran juga dirancang untuk mengembangkan keterampilan komunikasi, kreativitas,
+                kolaborasi, dan literasi digital sebagai bagian dari kompetensi abad ke-21.
+            </p>
+
+            <p><b>Analisis Berdasarkan Kajian Teori:</b>
+                Modul ini mengadopsi pendekatan Project Based Learning (PjBL) melalui kegiatan pembuatan kampanye
+                digital sebagai produk akhir pembelajaran. Menurut teori konstruktivisme, peserta didik membangun
+                pemahamannya melalui pengalaman langsung dan aktivitas yang bermakna. Oleh karena itu, proyek kampanye
+                digital memberikan kesempatan kepada peserta didik untuk mengintegrasikan pengetahuan, keterampilan, dan
+                sikap dalam satu kegiatan yang autentik. Selain itu, prinsip pembelajaran kontekstual (Contextual
+                Teaching and Learning) juga diterapkan karena tema kampanye diambil dari permasalahan digital yang dekat
+                dengan kehidupan peserta didik. Aktivitas refleksi yang dilakukan pada akhir pembelajaran mendukung
+                pengembangan metakognisi sehingga peserta didik dapat mengevaluasi pemahaman dan pengalaman belajarnya
+                secara mandiri.
+            </p>
+
+            <p><b>Kelebihan:</b></p>
+            <p>
+                Kegiatan kampanye digital menjadi bentuk pembelajaran autentik yang memungkinkan peserta didik
+                menghasilkan karya nyata, bukan sekadar menjawab soal atau menghafal konsep. Diferensiasi produk berupa
+                poster, infografis, komik digital, atau video memberikan ruang bagi peserta didik untuk mengekspresikan
+                kreativitas sesuai minat dan kemampuannya. Pemanfaatan aplikasi desain digital seperti Canva dan
+                penggunaan platform digital untuk berbagi hasil karya juga mendukung pengembangan literasi digital yang
+                relevan dengan kebutuhan abad ke-21. Selain itu, jurnal refleksi yang digunakan pada akhir pembelajaran
+                membantu peserta didik melakukan evaluasi diri terhadap proses dan hasil belajar yang telah mereka
+                capai.
+            </p>
+
+            <p><b>Kekurangan:</b></p>
+            <p>
+                Materi pengantar mengenai etika digital, hak kekayaan intelektual, dan keamanan data masih relatif
+                singkat dibandingkan luasnya cakupan materi yang harus dipahami peserta didik. Alokasi waktu untuk
+                pembuatan kampanye digital juga cukup terbatas sehingga beberapa kelompok belum dapat mengembangkan ide
+                secara maksimal. Selain itu, rubrik penilaian produk kampanye belum dijelaskan secara rinci sehingga
+                berpotensi menimbulkan subjektivitas dalam proses asesmen. Kegiatan refleksi juga masih memerlukan
+                panduan pertanyaan yang lebih terstruktur agar peserta didik dapat melakukan refleksi secara lebih
+                mendalam.
+            </p>
+
+            <p><b>Kendala Saat Menyusun Modul:</b></p>
+            <p>
+                Tantangan utama dalam penyusunan modul ini adalah menyeimbangkan antara penyampaian konsep etika digital
+                dan pelaksanaan proyek kampanye dalam alokasi waktu yang terbatas. Selain itu, penyusun perlu
+                mempertimbangkan variasi kemampuan teknologi peserta didik sehingga produk yang dihasilkan tetap dapat
+                dibuat oleh seluruh peserta didik dengan tingkat keterampilan yang berbeda. Penyusunan aktivitas proyek
+                juga memerlukan perencanaan yang matang agar tujuan pembelajaran tetap tercapai meskipun terdapat
+                keterbatasan sarana dan perangkat digital.
+            </p>
+
+            <p><b>Faktor Keberhasilan Saat Diterapkan:</b></p>
+            <p>
+                Keberhasilan implementasi modul didukung oleh tingginya minat peserta didik terhadap penggunaan media
+                digital dan aktivitas kreatif. Tema kampanye yang dekat dengan kehidupan mereka membuat peserta didik
+                lebih mudah memahami pentingnya etika digital. Kegiatan kolaboratif dalam kelompok juga membantu peserta
+                didik saling berbagi ide dan keterampilan. Selain itu, keterkaitan materi dengan pembelajaran pada dua
+                pertemuan sebelumnya membuat peserta didik memiliki pemahaman yang cukup untuk merancang pesan kampanye
+                yang relevan dan edukatif.
+            </p>
+
+            <p><b>Penyesuaian Jika Diterapkan pada Situasi Kelas yang Berbeda:</b></p>
+            <p>
+                Jika diterapkan pada kelas dengan akses perangkat digital yang terbatas, proyek kampanye dapat dialihkan
+                menjadi poster atau infografis manual menggunakan media kertas tanpa mengurangi esensi pembelajaran.
+                Pada kelas yang memiliki kemampuan teknologi lebih tinggi, peserta didik dapat diarahkan untuk membuat
+                video kampanye atau konten media sosial yang lebih kompleks. Selain itu, jika waktu pembelajaran
+                memungkinkan, kegiatan proyek dapat diperluas menjadi beberapa pertemuan sehingga peserta didik memiliki
+                kesempatan lebih banyak untuk merancang, merevisi, dan menyempurnakan produk yang dihasilkan.
+            </p>
+
+            <hr style="margin: 15px 0;">
+
+            <p><i>
+                    Melalui modul ini, peserta didik tidak hanya memahami konsep etika digital, tetapi juga mampu
+                    menerapkan nilai-nilai tersebut dalam bentuk karya nyata yang mendorong penggunaan teknologi secara
+                    bertanggung jawab. Pengalaman merancang kampanye digital membantu peserta didik mengembangkan
+                    kreativitas, kemampuan komunikasi, kolaborasi, dan kesadaran sebagai warga digital yang baik.
+                </i></p>
+        </div>
+    </div>
+
+    <!-- ========================================== -->
+    <!-- FOOTER -->
+    <!-- ========================================== -->
+
+    <footer class="site-footer">
+
+        <div class="footer-inner">
+
+            <!-- COL 1: BRAND -->
+            <div class="footer-col footer-brand">
+                <div class="footer-logo">
+                    <i class="fas fa-graduation-cap"></i>
+                    <span>PORTOFOLIO</span>
+                </div>
+                <p class="footer-tagline">
+                    "Mengenal peserta didik dengan hati,<br>mengajar dengan inovasi."
+                </p>
+                <div class="footer-social">
+                    <a href="https://www.linkedin.com/in/mohamad-saiful-anwar/" target="_blank" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://instagram.com/saiful.lll/" target="_blank" aria-label="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://github.com/mohamadsaifulanwar/" target="_blank" aria-label="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="mailto:saifalanwar13@gmail.com" aria-label="Email">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- DIVIDER VERTICAL -->
+            <div class="footer-divider"></div>
+
+            <!-- COL 2: NAVIGASI -->
+            <div class="footer-col">
+                <h4 class="footer-col-title">Navigasi</h4>
+                <ul class="footer-nav-list">
+                    <li><a href="javascript:void(0)"
+                            onclick="showSection('home', document.querySelector('.nav-link'))"><i
+                                class="fas fa-chevron-right"></i> Home</a></li>
+                    <li><a href="javascript:void(0)"
+                            onclick="openGroup('profil', document.querySelectorAll('.nav-link')[1])"><i
+                                class="fas fa-chevron-right"></i> Profil</a></li>
+                    <li><a href="javascript:void(0)"
+                            onclick="openGroup('artefak', document.querySelectorAll('.nav-link')[2])"><i
+                                class="fas fa-chevron-right"></i> Artefak</a></li>
+                    <li><a href="javascript:void(0)"
+                            onclick="openGroup('refleksi', document.querySelectorAll('.nav-link')[3])"><i
+                                class="fas fa-chevron-right"></i> Refleksi Akhir</a></li>
+                    <li><a href="javascript:void(0)"
+                            onclick="showSection('guru', document.querySelectorAll('.nav-link')[4])"><i
+                                class="fas fa-chevron-right"></i> Model Guru</a></li>
+                    <li><a href="javascript:void(0)"
+                            onclick="showSection('filosofi', document.querySelectorAll('.nav-link')[5])"><i
+                                class="fas fa-chevron-right"></i> Filosofi Mengajar</a></li>
+                    <li><a href="javascript:void(0)"
+                            onclick="showSection('refleksimk', document.querySelectorAll('.nav-link')[6])"><i
+                                class="fas fa-chevron-right"></i> Refleksi Mata Kuliah</a></li>
+                </ul>
+            </div>
+
+            <!-- DIVIDER VERTICAL -->
+            <div class="footer-divider"></div>
+
+            <!-- COL 3: INFO -->
+            <div class="footer-col">
+                <h4 class="footer-col-title">Informasi</h4>
+                <ul class="footer-info-list">
+                    <li>
+                        <i class="fas fa-user-graduate"></i>
+                        <span>Mohamad Saiful Anwar, S.Kom.</span>
+                    </li>
+                    <li>
+                        <i class="fas fa-university"></i>
+                        <span>PPG Prajabatan 2026 – Informatika</span>
+                    </li>
+                    <li>
+                        <i class="fas fa-building-columns"></i>
+                        <span>Universitas Muhammadiyah Surakarta</span>
+                    </li>
+                    <li>
+                        <i class="fas fa-school"></i>
+                        <span>SMP Muhammadiyah PK Kottabarat Surakarta</span>
+                    </li>
+                    <li>
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Blora, Jawa Tengah</span>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+
+        <!-- BOTTOM BAR -->
+        <div class="footer-bottom">
+            <div class="footer-bottom-inner">
+                <span class="footer-copy">
+                    &copy; 2026 &mdash; Mohamad Saiful Anwar &nbsp;|&nbsp; PPG Prajabatan Informatika &nbsp;|&nbsp; UMS
+                </span>
+                <span class="footer-made">
+                    <i class="fas fa-heart"></i> Dibuat dengan semangat belajar
+                </span>
+            </div>
+        </div>
+
+    </footer>
+
+    <!-- Link ke JavaScript -->
+    <script src="script.js"></script>
+</body>
+
+</html>
